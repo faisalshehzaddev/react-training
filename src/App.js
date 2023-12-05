@@ -10,7 +10,7 @@ import MemoCounter from "./components/FunctionalComponents/Memoization/Value/Mem
 import ExpensiveFunctionCounter from "./components/FunctionalComponents/Memoization/Function/ExpensiveFunctionCounter";
 import { useState } from "react";
 import InputComponent from "./components/FunctionalComponents/useRef/InputComponent";
-
+import CounterWithLocalStorage from "./components/FunctionalComponents/CustomHooks/CounterWithLocalStorage";
 function App() {
   const [showClassCounter, setShowClassCounter] = useState(false);
   const [showFunctionalCounter, setFunctionalCounter] = useState(false);
@@ -18,6 +18,9 @@ function App() {
     <div className="App">
       <header className="App-header">
         <div>
+          <CounterWithLocalStorage />
+          <br />
+          <br />
           <InputComponent />
           <br />
           <h1>Class Component</h1>
