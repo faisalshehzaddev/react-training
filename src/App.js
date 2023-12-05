@@ -3,6 +3,7 @@ import "./App.css";
 import ClassCounter from "./components/ClassComponents/Counter";
 import FunctionalCounter from "./components/FunctionalComponents/Counter";
 import PropsDrilling from "./components/FunctionalComponents/PropsDrilling/Component1";
+import PropsDrillingSolution from "./components/FunctionalComponents/PropsDrillingSolution/Component1";
 import { useState } from "react";
 
 function App() {
@@ -37,7 +38,11 @@ function App() {
           {showFunctionalCounter && <FunctionalCounter initialValue={0} />}
         </div>
         <br/>
+        <h4>Props Drilling</h4>
         <PropsDrilling />
+        <br />
+        <h4>Props Drilling Solution</h4>
+        <PropsDrillingSolution />
       </header>
     </div>
   );
