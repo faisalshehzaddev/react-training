@@ -5,10 +5,10 @@ export default function useLocalStorage(key, value) {
 
   const [state, setState] = useState(initialValue);
 
-  const setStoredValue = (newValue) => {
-    setState(newValue)
-    localStorage.setItem(key, JSON.stringify(newValue));
-
+  const setStoredKeyValue = (newValue) => {
+    setState(newValue);
+    localStorage.setItem(key, JSON.parse(newValue));
   };
-  return [state, setStoredValue];;
+
+  return [state, setStoredKeyValue];
 }
