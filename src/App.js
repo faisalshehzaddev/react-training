@@ -4,6 +4,7 @@ import ClassCounter from "./components/ClassComponents/Counter";
 import FunctionalCounter from "./components/FunctionalComponents/Counter";
 import PropsDrilling from "./components/FunctionalComponents/PropsDrilling/Component1";
 import PropsDrillingSolution from "./components/FunctionalComponents/PropsDrillingSolution/Component1";
+import ReducerCounter from "./components/FunctionalComponents/useReducer/Counter";
 import { useState } from "react";
 
 function App() {
@@ -37,12 +38,16 @@ function App() {
           </button>
           {showFunctionalCounter && <FunctionalCounter initialValue={0} />}
         </div>
-        <br/>
+        <br />
         <h4>Props Drilling</h4>
         <PropsDrilling />
         <br />
         <h4>Props Drilling Solution</h4>
         <PropsDrillingSolution />
+        <br />
+        <ReducerCounter />
+        <br />
+        <br />
       </header>
     </div>
   );
