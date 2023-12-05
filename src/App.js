@@ -7,6 +7,7 @@ import PropsDrillingSolution from "./components/FunctionalComponents/PropsDrilli
 import ReducerCounter from "./components/FunctionalComponents/useReducer/Counter";
 import ExpensiveCounter from "./components/FunctionalComponents/Memoization/Value/ExpensiveCounter";
 import MemoCounter from "./components/FunctionalComponents/Memoization/Value/MemoCounter";
+import ExpensiveFunctionCounter from "./components/FunctionalComponents/Memoization/Function/ExpensiveFunctionCounter"
 import { useState } from "react";
 
 function App() {
@@ -52,6 +53,8 @@ function App() {
         <ExpensiveCounter />
         <br />
         <MemoCounter />
+        <br />
+        <ExpensiveFunctionCounter />
         <br />
       </header>
     </div>
